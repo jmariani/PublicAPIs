@@ -9,4 +9,4 @@ baseline: spec
 			spec
 				package: 'PublicAPIs' with: [ spec requires: 'NeoJSON' ];
 				package: 'PublicAPIs-CatFacts' with: [ spec requires: 'NeoJSON' ].
-			spec group: 'CatFacts' with: #('NeoJSON' 'PublicApis-CatFacts') ]
+			spec group: 'CatFacts' with: #('NeoJSON' 'PublicAPIs-CatFacts') ]
