@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JorgeMariani 9/22/2020 09:09",
+	"super" : "Object",
+	"category" : "PublicAPIs-CatFacts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sentCount",
+		"isVerified"
+	],
+	"name" : "CatFactStatus",
+	"type" : "normal"
+}
