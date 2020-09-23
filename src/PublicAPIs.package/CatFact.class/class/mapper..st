@@ -1,11 +1,11 @@
-NeoJSONReaders
-readerForCatFact: aNeoJSONReader
+options
+mapper: aNeoJSONReader
 	"Returns a NeoJSONReader mapping"
 
-	self readerForCatFactStatus: aNeoJSONReader.
-	self readerForDateAndTime: aNeoJSONReader.
-		^ aNeoJSONReader
-		for: CatFact
+	CatFactUtility readerForCatFactStatus: aNeoJSONReader.
+	CatFactUtility readerForDateAndTime: aNeoJSONReader.
+	^ aNeoJSONReader
+		for: self
 		do: [ :mapping | 
 			mapping mapInstVars: #(source text type user).
 			(mapping mapInstVar: #createdAt) valueSchema: DateAndTime.
